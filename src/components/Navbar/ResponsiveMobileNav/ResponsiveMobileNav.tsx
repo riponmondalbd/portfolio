@@ -9,9 +9,9 @@ export default function ResponsiveMobileNav({
   setOpen: (value: boolean) => void;
 }) {
   return (
-    <div className=" md:hidden ">
+    <div className=" md:hidden fixed w-full">
       {open && (
-        <div className="bg-[#f4f4f4] dark:bg-black animate-fade-down animate-once animate-duration-500 animate-delay-100">
+        <div className="absolute w-full bg-[#f4f4f4] shadow-lg pt-2 pb-2 dark:bg-black animate-fade-down animate-once animate-duration-500 animate-delay-100">
           <ul className="flex flex-col items-center gap-4">
             {NavbarData.map((navData) => (
               <li
