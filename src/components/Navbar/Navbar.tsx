@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MdMenu, MdMenuOpen } from "react-icons/md";
 import logo from "../../../public/logo-orange.png";
 import { ThemeChanger } from "../ThemeChanger/ThemeChanger";
@@ -10,9 +10,25 @@ import ResponsiveMobileNav from "./ResponsiveMobileNav/ResponsiveMobileNav";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [hasShadow, setHasShadow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setHasShadow(true);
+      } else {
+        setHasShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
-      <nav className="bg-[#f4f4f4] dark:bg-black">
+      <nav
+        className={`bg-[#f4f4f4] dark:bg-black sticky top-0 transition-shadow duration-300 z-10 ${
+          hasShadow ? "shadow-lg" : ""
+        }`}
+      >
         <div className="max-w-7xl mx-auto">
           {/* logo section */}
           <div className="flex items-center justify-between py-3 px-1">

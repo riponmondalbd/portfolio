@@ -1,3 +1,9 @@
+import BannerSection from "@/components/Banner/Banner";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <BannerSection />
+    </div>
+  );
 }
