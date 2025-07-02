@@ -20,16 +20,28 @@ export default function BannerSection() {
               and trying to fix critical errors. Although it’s not always
               enjoyable, I always try to do my best.
             </p>
-            <Link
-              href={
-                "https://drive.google.com/file/d/1YrvdR6291jd8FgywZBvx0BU5MvfrbCNP/view?usp=drive_link"
-              }
-              target="_blank"
-            >
-              <Button className="cursor-pointer bg-[#DF5C17] dark:text-white dark:hover:text-black animate-fade-up animate-once animate-duration-500 animate-ease-linear py-6">
-                Resume
-              </Button>
-            </Link>
+
+            {/* button groups */}
+            <div className="flex gap-4 items-center justify-center md:justify-start">
+              {/* skills */}
+              <Link href={"#portfolio"}>
+                <Button className="cursor-pointer bg-[#DF5C17] dark:text-white dark:hover:text-black animate-fade-up animate-once animate-duration-500 animate-ease-linear py-6">
+                  Projects
+                </Button>
+              </Link>
+
+              {/* resume */}
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1YrvdR6291jd8FgywZBvx0BU5MvfrbCNP/view?usp=drive_link"
+                }
+                target="_blank"
+              >
+                <Button className="cursor-pointer bg-[#DF5C17] dark:text-white dark:hover:text-black animate-fade-up animate-once animate-duration-500 animate-ease-linear py-6">
+                  Resume
+                </Button>
+              </Link>
+            </div>
           </div>
           {/* right side content image */}
           <div className="w-full xl:relative pb-8 md:pb-0">
