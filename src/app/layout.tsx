@@ -1,3 +1,4 @@
+import FooterSection from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
@@ -37,6 +38,7 @@ export default function RootLayout({
         >
           <Navbar />
           <main className="scroll-smooth">{children}</main>
+          <FooterSection />
         </ThemeProvider>
       </body>
     </html>

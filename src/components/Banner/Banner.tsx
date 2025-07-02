@@ -26,7 +26,7 @@ export default function BannerSection() {
               }
               target="_blank"
             >
-              <Button className="cursor-pointer bg-[#DF5C17] dark:text-white dark:hover:text-black animate-fade-up animate-once animate-duration-500 animate-ease-linear">
+              <Button className="cursor-pointer bg-[#DF5C17] dark:text-white dark:hover:text-black animate-fade-up animate-once animate-duration-500 animate-ease-linear py-6">
                 Resume
               </Button>
             </Link>
