@@ -50,7 +50,7 @@ export default function TimeCounter() {
         <div className="text-5xl space-y-4 gap-10">
           {/* Year */}
           <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">
-            <p className="flex flex-col items-center">
+            <p className="flex flex-col items-center font-bold">
               <span>
                 <CountUp
                   key={`year-${countKey}`}
@@ -65,7 +65,7 @@ export default function TimeCounter() {
 
           {/* Month */}
           <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">
-            <p className="flex flex-col items-center">
+            <p className="flex flex-col items-center font-bold">
               <span>
                 <CountUp
                   key={`month-${countKey}`}
@@ -80,7 +80,7 @@ export default function TimeCounter() {
 
           {/* Day */}
           <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">
-            <p className="flex flex-col items-center">
+            <p className="flex flex-col items-center font-bold">
               <span>
                 <CountUp
                   key={`day-${countKey}`}

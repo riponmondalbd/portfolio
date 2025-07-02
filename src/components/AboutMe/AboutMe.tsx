@@ -43,11 +43,11 @@ export default function AboutMe() {
 
             {/* right side content */}
             <div className="space-y-5">
-              {/* about section title */}
+              {/* about subheading section title */}
               <h3 className="text-xl font-semibold text-[#DF5C17] text-shadow-2xs">
                 About Me
               </h3>
-              {/* plain text header */}
+              {/* about heading section */}
               <h1 className="text-5xl font-semibold ">
                 Ripon Mondal{" "}
                 <span className="text-xl text-[#DF5C17]">[Web Developer]</span>
@@ -66,7 +66,7 @@ export default function AboutMe() {
               <div className="grid md:grid-cols-2 gap-8 justify-between">
                 {/* mern stack */}
                 <div className="border-2 p-4 rounded space-y-5 hover:bg-neutral-400/5 hover:backdrop-blur-3xl">
-                  <div className="flex items-center gap-2 text-2xl">
+                  <div className="flex items-center gap-2 text-2xl font-semibold">
                     <RiReactjsFill />
                     <h1>MERN Stack</h1>
                   </div>
@@ -77,7 +77,7 @@ export default function AboutMe() {
                 </div>
                 {/* next.js */}
                 <div className="border-2 p-4 rounded space-y-5 hover:bg-neutral-400/5 hover:backdrop-blur-3xl">
-                  <div className="flex items-center gap-2 text-2xl">
+                  <div className="flex items-center gap-2 text-2xl font-semibold">
                     <RiNextjsLine />
                     <h1>Next.Js</h1>
                   </div>
