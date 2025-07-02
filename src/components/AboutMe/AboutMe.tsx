@@ -11,17 +11,15 @@ export default function AboutMe() {
       <div>
         <div>
           {/* plain text header */}
-          <h1 className="text-center py-10 md:py-32 text-4xl md:text-5xl font-semibold md:leading-16 ">
+          <h1 className="text-center pb-10 md:pb-32 text-4xl md:text-5xl font-semibold md:leading-16 ">
             Passionate Web Developer{" "}
             <span className="text-[#DF5C17]">skilled</span> in JavaScript,
             React.js, Next.js, and{" "}
             <span className="text-[#DF5C17]">full-stack</span> development.
-            Eager to learn, build dynamic website, and{" "}
-            <span className="text-[#DF5C17]">contribute</span> in a professional
-            environment.
           </h1>
         </div>
 
+        {/* blur background */}
         <div className="relative">
           <div
             className="absolute -left-24 bottom-0 md:-bottom-24 w-[400px] h-[400px] rounded-full blur-lg opacity-60 z-[-1]"
@@ -45,6 +43,7 @@ export default function AboutMe() {
 
             {/* right side content */}
             <div className="space-y-5">
+              {/* about section title */}
               <h3 className="text-xl font-semibold text-[#DF5C17] text-shadow-2xs">
                 About Me
               </h3>
@@ -53,6 +52,7 @@ export default function AboutMe() {
                 Ripon Mondal{" "}
                 <span className="text-xl text-[#DF5C17]">[Web Developer]</span>
               </h1>
+              {/* content */}
               <p>
                 Passionate Web Developer with a strong foundation in JavaScript,
                 React.js, Next.js, front-end and back-end development. Skilled
@@ -62,8 +62,10 @@ export default function AboutMe() {
                 part of a professional setting where my skills can be amplified
                 and executed effectively.
               </p>
+              {/* stack base section */}
               <div className="grid md:grid-cols-2 gap-8 justify-between">
-                <div className="border-2 p-4 rounded space-y-5">
+                {/* mern stack */}
+                <div className="border-2 p-4 rounded space-y-5 hover:bg-neutral-400/5 hover:backdrop-blur-3xl">
                   <div className="flex items-center gap-2 text-2xl">
                     <RiReactjsFill />
                     <h1>MERN Stack</h1>
@@ -73,7 +75,8 @@ export default function AboutMe() {
                     MongoDB, Express, React, and Node.js.
                   </p>
                 </div>
-                <div className="border-2 p-4 rounded space-y-5">
+                {/* next.js */}
+                <div className="border-2 p-4 rounded space-y-5 hover:bg-neutral-400/5 hover:backdrop-blur-3xl">
                   <div className="flex items-center gap-2 text-2xl">
                     <RiNextjsLine />
                     <h1>Next.Js</h1>
