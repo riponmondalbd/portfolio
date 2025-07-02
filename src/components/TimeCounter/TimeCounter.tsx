@@ -6,7 +6,11 @@ import { useInView } from "react-intersection-observer";
 
 export default function TimeCounter() {
   const [duration, setDuration] = useState({ years: 0, months: 0, days: 0 });
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 });
+  const [countKey, setCountKey] = useState(0); // used to re-trigger animation
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.3,
+  });
 
   useEffect(() => {
     const startDate = new Date("2023-08-23");
@@ -33,71 +37,62 @@ export default function TimeCounter() {
     calculateDuration();
   }, []);
 
+  useEffect(() => {
+    if (inView) {
+      // Trigger new CountUp animation by changing key
+      setCountKey((prev) => prev + 1);
+    }
+  }, [inView]);
+
   return (
-    <div>
-      <div ref={ref} className="text-xl font-medium leading-relaxed">
-        <div className=" border-2 shadow p-4 rounded-xl ">
-          {inView && (
-            <div className="text-5xl space-y-4 gap-10">
-              {/* years */}
-              <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-md rounded-md">
-                <p className="flex flex-col items-center">
-                  <span>
-                    <CountUp
-                      key={`year-${Date.now()}`}
-                      end={duration.years}
-                      duration={1.2}
-                      delay={0.3}
-                    />
-                  </span>
-                  <span>Year{duration.years !== 1 && "s"}</span>
-                </p>
-              </div>
+    <div ref={ref} className="text-xl font-medium leading-relaxed">
+      <div className="border-2 shadow p-4 rounded-xl">
+        <div className="text-5xl space-y-4 gap-10">
+          {/* Year */}
+          <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-md rounded-md">
+            <p className="flex flex-col items-center">
+              <span>
+                <CountUp
+                  key={`year-${countKey}`}
+                  end={duration.years}
+                  duration={1.2}
+                  delay={0.3}
+                />
+              </span>
+              <span>Year{duration.years !== 1 && "s"}</span>
+            </p>
+          </div>
 
-              {/* months */}
-              <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-md rounded-md">
-                <p className="flex flex-col items-center">
-                  <span>
-                    <CountUp
-                      key={`month-${Date.now()}`}
-                      end={duration.months}
-                      duration={1.2}
-                      delay={0.6}
-                    />
-                  </span>
-                  <span>Month{duration.months !== 1 && "s"}</span>
-                </p>
-              </div>
+          {/* Month */}
+          <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-md rounded-md">
+            <p className="flex flex-col items-center">
+              <span>
+                <CountUp
+                  key={`month-${countKey}`}
+                  end={duration.months}
+                  duration={1.2}
+                  delay={0.6}
+                />
+              </span>
+              <span>Month{duration.months !== 1 && "s"}</span>
+            </p>
+          </div>
 
-              {/* days */}
-              <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-md rounded-md">
-                <p className="flex flex-col items-center">
-                  <span>
-                    <CountUp
-                      key={`day-${Date.now()}`}
-                      end={duration.days}
-                      duration={1.2}
-                      delay={0.9}
-                    />
-                  </span>
-                  <span>Day{duration.days !== 1 && "s"}</span>
-                </p>
-              </div>
-            </div>
-          )}
+          {/* Day */}
+          <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-md rounded-md">
+            <p className="flex flex-col items-center">
+              <span>
+                <CountUp
+                  key={`day-${countKey}`}
+                  end={duration.days}
+                  duration={1.2}
+                  delay={0.9}
+                />
+              </span>
+              <span>Day{duration.days !== 1 && "s"}</span>
+            </p>
+          </div>
         </div>
-
-        {/* wakatime activity */}
-        {/* <div className="flex justify-center">
-          <Link href="https://wakatime.com/@c147a387-bdfb-4149-bf5f-56eb0432af87">
-            <Image
-              width={200}
-              height={200}
-              src="https://wakatime.com/badge/user/c147a387-bdfb-4149-bf5f-56eb0432af87.svg"
-              alt="Total time coded since Aug 17 2023"
-            />
-          </Link>
-        </div> */}
       </div>
     </div>
   );
