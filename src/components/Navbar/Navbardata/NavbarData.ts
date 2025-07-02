@@ -2,7 +2,7 @@ export const NavbarData = [
   {
     id: 1,
     title: "Home",
-    link: "/",
+    link: "#home",
   },
   {
     id: 2,
@@ -16,6 +16,11 @@ export const NavbarData = [
   },
   {
     id: 4,
+    title: "Skills",
+    link: "#skills",
+  },
+  {
+    id: 5,
     title: "Contact",
     link: "#contact",
   },

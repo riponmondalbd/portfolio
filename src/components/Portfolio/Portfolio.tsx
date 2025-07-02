@@ -1,3 +1,4 @@
+import HeadingStyle from "../common/HeadingCommon/HeadingStyle";
 import AllPortfolio from "./AllPortfolio/AllPortfolio";
 
 export default function PortfolioSection() {
@@ -9,14 +10,10 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto ">
         <div>
           {/* heading section */}
-          <div className="text-center space-y-5">
-            {/* portfolio sub heading section title */}
-            <h3 className="text-xl font-semibold text-[#DF5C17] text-shadow-2xs">
-              Portfolio
-            </h3>
-            {/* portfolio heading section */}
-            <h1 className="text-5xl font-semibold ">Visit My Latest Work</h1>
-          </div>
+          <HeadingStyle
+            subHeading="Portfolio"
+            mainHeading="Visit My Latest Work"
+          />
 
           {/* all portfolios details */}
           <AllPortfolio />

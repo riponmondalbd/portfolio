@@ -22,7 +22,7 @@ import portfolioImage from "../../../../public/assets/portfolio.png";
 export default function AllPortfolio() {
   return (
     <div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-10">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10">
         {/* project 1  poor doct*/}
         <div className="border rounded-md bg-white dark:bg-black dark:border-[#DF5C17] hover:shadow-md p-4">
           <AlertDialog>
