@@ -24,11 +24,15 @@ export default function AllPortfolio() {
     <div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-10">
         {/* project 1  poor doct*/}
-        <div className="border rounded-md bg-white dark:bg-black hover:shadow-md p-4">
+        <div className="border rounded-md bg-white dark:bg-black dark:border-[#DF5C17] hover:shadow-md p-4">
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <div className="cursor-pointer">
-                <Image src={poorDoctImage} alt="poor doct" />
+                <Image
+                  className="rounded-md"
+                  src={poorDoctImage}
+                  alt="poor doct"
+                />
                 <h1 className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Poor Doct
                 </h1>
@@ -36,7 +40,11 @@ export default function AllPortfolio() {
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
-                <Image src={poorDoctImage} alt="poor doct" />
+                <Image
+                  className="rounded-md"
+                  src={poorDoctImage}
+                  alt="poor doct"
+                />
                 <AlertDialogTitle className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Car Doctor
                 </AlertDialogTitle>
@@ -74,11 +82,15 @@ export default function AllPortfolio() {
           </AlertDialog>
         </div>
         {/* project 2 bistro boss */}
-        <div className="border rounded-md bg-white dark:bg-black hover:shadow-md p-4">
+        <div className="border rounded-md bg-white dark:bg-black dark:border-[#DF5C17] hover:shadow-md p-4">
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <div className="cursor-pointer">
-                <Image src={bistroBossImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={bistroBossImage}
+                  alt="project"
+                />
                 <h1 className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Bistro Boss
                 </h1>
@@ -86,7 +98,11 @@ export default function AllPortfolio() {
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
-                <Image src={bistroBossImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={bistroBossImage}
+                  alt="project"
+                />
                 <AlertDialogTitle className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Bistro Boss
                 </AlertDialogTitle>
@@ -129,11 +145,15 @@ export default function AllPortfolio() {
           </AlertDialog>
         </div>
         {/* project 3 Job Portal*/}
-        <div className="border rounded-md bg-white dark:bg-black hover:shadow-md p-4">
+        <div className="border rounded-md bg-white dark:bg-black dark:border-[#DF5C17] hover:shadow-md p-4">
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <div className="cursor-pointer">
-                <Image src={jobPortalImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={jobPortalImage}
+                  alt="project"
+                />
                 <h1 className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Job Portal
                 </h1>
@@ -141,7 +161,11 @@ export default function AllPortfolio() {
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
-                <Image src={jobPortalImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={jobPortalImage}
+                  alt="project"
+                />
                 <AlertDialogTitle className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Job Portal
                 </AlertDialogTitle>
@@ -182,11 +206,15 @@ export default function AllPortfolio() {
           </AlertDialog>
         </div>
         {/* project 4 portfolio*/}
-        <div className="border rounded-md bg-white dark:bg-black hover:shadow-md p-4">
+        <div className="border rounded-md bg-white dark:bg-black dark:border-[#DF5C17] hover:shadow-md p-4">
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <div className="cursor-pointer">
-                <Image src={portfolioImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={portfolioImage}
+                  alt="project"
+                />
                 <h1 className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Portfolio
                 </h1>
@@ -194,7 +222,11 @@ export default function AllPortfolio() {
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
-                <Image src={portfolioImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={portfolioImage}
+                  alt="project"
+                />
                 <AlertDialogTitle className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Portfolio
                 </AlertDialogTitle>
@@ -232,11 +264,15 @@ export default function AllPortfolio() {
           </AlertDialog>
         </div>
         {/* project 5 book review*/}
-        <div className="border rounded-md bg-white dark:bg-black hover:shadow-md p-4">
+        <div className="border rounded-md bg-white dark:bg-black dark:border-[#DF5C17] hover:shadow-md p-4">
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <div className="cursor-pointer">
-                <Image src={bookReviewImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={bookReviewImage}
+                  alt="project"
+                />
                 <h1 className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Book Review
                 </h1>
@@ -244,7 +280,11 @@ export default function AllPortfolio() {
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
-                <Image src={bookReviewImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={bookReviewImage}
+                  alt="project"
+                />
                 <AlertDialogTitle className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Book Review
                 </AlertDialogTitle>
@@ -284,11 +324,15 @@ export default function AllPortfolio() {
           </AlertDialog>
         </div>
         {/* project 6 dragon News*/}
-        <div className="border rounded-md bg-white dark:bg-black hover:shadow-md p-4">
+        <div className="border rounded-md bg-white dark:bg-black dark:border-[#DF5C17] hover:shadow-md p-4">
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <div className="cursor-pointer">
-                <Image src={dragonNewsPaperImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={dragonNewsPaperImage}
+                  alt="project"
+                />
                 <h1 className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Dragon News
                 </h1>
@@ -296,7 +340,11 @@ export default function AllPortfolio() {
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>
-                <Image src={dragonNewsPaperImage} alt="project" />
+                <Image
+                  className="rounded-md"
+                  src={dragonNewsPaperImage}
+                  alt="project"
+                />
                 <AlertDialogTitle className="text-xl text-center mt-5 font-semibold text-[#DF5C17] text-shadow-2xs">
                   Dragon News
                 </AlertDialogTitle>

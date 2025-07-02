@@ -46,7 +46,7 @@ export default function TimeCounter() {
 
   return (
     <div ref={ref} className="text-xl font-medium leading-relaxed">
-      <div className="border-2 shadow p-4 rounded-xl">
+      <div className="border-2 dark:border-[#DF5C17] shadow p-4 rounded-xl">
         <div className="text-5xl space-y-4 gap-10">
           {/* Year */}
           <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">

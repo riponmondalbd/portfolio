@@ -65,7 +65,7 @@ export default function AboutMe() {
               {/* stack base section */}
               <div className="grid md:grid-cols-2 gap-8 justify-between">
                 {/* mern stack */}
-                <div className="border-2 p-4 rounded space-y-5 hover:bg-neutral-400/5 hover:backdrop-blur-3xl">
+                <div className="border-2 p-4 rounded-md space-y-5 hover:bg-neutral-400/5 dark:border-[#DF5C17] hover:backdrop-blur-3xl">
                   <div className="flex items-center gap-2 text-2xl font-semibold">
                     <RiReactjsFill />
                     <h1>MERN Stack</h1>
@@ -76,7 +76,7 @@ export default function AboutMe() {
                   </p>
                 </div>
                 {/* next.js */}
-                <div className="border-2 p-4 rounded space-y-5 hover:bg-neutral-400/5 hover:backdrop-blur-3xl">
+                <div className="border-2 p-4 rounded-md space-y-5 hover:bg-neutral-400/5 dark:border-[#DF5C17] hover:backdrop-blur-3xl">
                   <div className="flex items-center gap-2 text-2xl font-semibold">
                     <RiNextjsLine />
                     <h1>Next.Js</h1>
