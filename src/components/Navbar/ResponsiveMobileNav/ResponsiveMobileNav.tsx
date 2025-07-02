@@ -9,7 +9,7 @@ export default function ResponsiveMobileNav({
   setOpen: (value: boolean) => void;
 }) {
   return (
-    <div className=" md:hidden fixed w-full">
+    <div className=" md:hidden fixed w-full z-50">
       {open && (
         <div className="absolute w-full bg-[#f4f4f4] shadow-lg pt-2 pb-2 dark:bg-black animate-fade-down animate-once animate-duration-500 animate-delay-100">
           <ul className="flex flex-col items-center gap-4">
