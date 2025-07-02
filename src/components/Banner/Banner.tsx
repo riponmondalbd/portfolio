@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 export default function BannerSection() {
   return (
     <div className="bg-[#f4f4f4] dark:bg-black">
-      <div className="max-w-7xl mx-auto px-1 py-10 md:py-20">
+      <div className="max-w-7xl mx-auto px-1 py-10 md:py-32">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between">
           {/* left side content */}
           <div className="w-full space-y-5 text-center md:text-left">
@@ -16,8 +16,9 @@ export default function BannerSection() {
               Ripon <br /> Mondal
             </h1>
             <p className="xl:w-2/3 py-4">
-              Outsourcing can provide corporate businesses with several
-              advantages, incl b usinesses Outsourcing can provide
+              A web developer and a curious learner who loves building websites
+              and trying to fix critical errors. Although it’s not always
+              enjoyable, I always try to do my best.
             </p>
             <Link
               href={
@@ -37,7 +38,7 @@ export default function BannerSection() {
               height={600}
               src={RoundedImage}
               alt="rounded background"
-              className="animate-spin hidden xl:block animate-infinite animate-duration-[35000ms]"
+              className="animate-spin hidden xl:block animate-infinite animate-duration-[50000ms]"
             />
             <Image
               width={600}

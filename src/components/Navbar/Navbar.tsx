@@ -54,7 +54,9 @@ export default function Navbar() {
                     key={navData.id}
                     className="font-semibold hover:text-[#DF5C17] duration-300"
                   >
-                    <Link href={navData.link}>{navData.title}</Link>
+                    <Link href={navData.link} scroll={true}>
+                      {navData.title}
+                    </Link>
                   </li>
                 ))}
               </ul>
