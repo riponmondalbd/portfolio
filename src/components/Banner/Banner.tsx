@@ -12,7 +12,7 @@ export default function BannerSection() {
           {/* left side content */}
           <div className="w-full space-y-5 text-center md:text-left">
             <h2 className="text-3xl font-bold text-[#DF5C17]">Web Developer</h2>
-            <h1 className="text-7xl uppercase font-bold ">
+            <h1 className="text-7xl uppercase font-bold animate-fade-up animate-once animate-duration-500 animate-ease-linear ">
               Ripon <br /> Mondal
             </h1>
             <p className="xl:w-2/3 py-4">
@@ -26,7 +26,7 @@ export default function BannerSection() {
               }
               target="_blank"
             >
-              <Button className="cursor-pointer bg-[#DF5C17] dark:text-white dark:hover:text-black">
+              <Button className="cursor-pointer bg-[#DF5C17] dark:text-white dark:hover:text-black animate-fade-up animate-once animate-duration-500 animate-ease-linear">
                 Resume
               </Button>
             </Link>
