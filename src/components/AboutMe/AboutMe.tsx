@@ -12,9 +12,9 @@ export default function AboutMe() {
         <div>
           {/* plain text header */}
           <h1 className="text-center pb-10 md:pb-32 text-4xl md:text-5xl font-semibold md:leading-16 ">
-            Passionate Web Developer{" "}
-            <span className="text-[#DF5C17]">skilled</span> in JavaScript,
-            React.js, Next.js, and{" "}
+            Passionate Web
+            <span className="text-[#DF5C17]"> Developer</span> skilled in
+            JavaScript, React.js, Next.js, and{" "}
             <span className="text-[#DF5C17]">full-stack</span> development.
           </h1>
         </div>
@@ -87,9 +87,11 @@ export default function AboutMe() {
                   </p>
                 </div>
               </div>
-              <Button className="cursor-pointer bg-[#DF5C17] dark:text-white dark:hover:text-black animate-fade-up animate-once animate-duration-500 animate-ease-linear py-6">
-                Details About Me
-              </Button>
+              <div>
+                <Button className="cursor-pointer bg-[#DF5C17] dark:text-white dark:hover:text-black animate-fade-up animate-once animate-duration-500 animate-ease-linear py-6">
+                  Details About Me
+                </Button>
+              </div>
             </div>
           </div>
         </div>
