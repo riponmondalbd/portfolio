@@ -57,15 +57,17 @@ export default function Navbar() {
               </ul>
             </div>
 
-            {/* theme changer section */}
             <div className="flex gap-2 items-center">
               {/* social buttons */}
               <div className="hidden lg:block">
                 <SocialButtons />
               </div>
+              {/* theme changer section */}
               <div>
                 <ThemeChanger />
               </div>
+
+              {/* mobile navbar menu  */}
               <div className="border p-2 rounded-md bg-white dark:bg-black hover:bg-[#f4f4f4] duration-300 md:hidden">
                 {open ? (
                   <MdMenuOpen onClick={() => setOpen(!open)} />
@@ -77,7 +79,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      {/* mobile menu */}
+      {/* mobile menu content */}
       <ResponsiveMobileNav open={open} setOpen={setOpen} />
     </>
   );
