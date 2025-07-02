@@ -13,7 +13,7 @@ export default function TimeCounter() {
   });
 
   useEffect(() => {
-    const startDate = new Date("2023-08-23");
+    const startDate = new Date("2023-01-01");
 
     const calculateDuration = () => {
       const now = new Date();
