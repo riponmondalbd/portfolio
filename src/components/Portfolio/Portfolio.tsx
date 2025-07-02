@@ -1,3 +1,5 @@
+import AllPortfolio from "./AllPortfolio/AllPortfolio";
+
 export default function PortfolioSection() {
   return (
     <div
@@ -6,6 +8,7 @@ export default function PortfolioSection() {
     >
       <div className="max-w-7xl mx-auto ">
         <div>
+          {/* heading section */}
           <div className="text-center space-y-5">
             {/* portfolio sub heading section title */}
             <h3 className="text-xl font-semibold text-[#DF5C17] text-shadow-2xs">
@@ -14,6 +17,9 @@ export default function PortfolioSection() {
             {/* portfolio heading section */}
             <h1 className="text-5xl font-semibold ">Visit my latest Work</h1>
           </div>
+
+          {/* all portfolios */}
+          <AllPortfolio />
         </div>
       </div>
     </div>
