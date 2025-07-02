@@ -7,6 +7,7 @@ export default function Home() {
     <div>
       <BannerSection />
       <AboutMe />
+
       <FooterSection />
     </div>
   );
