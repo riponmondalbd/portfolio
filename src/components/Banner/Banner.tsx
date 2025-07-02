@@ -11,8 +11,10 @@ export default function BannerSection() {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between">
           {/* left side content */}
           <div className="w-full space-y-5 text-center md:text-left">
-            <h2 className="text-3xl font-bold text-[#DF5C17]">Web Developer</h2>
-            <h1 className="text-7xl uppercase font-bold animate-fade-up animate-once animate-duration-500 animate-ease-linear ">
+            <h2 className="text-3xl font-bold text-shadow-2xs text-[#DF5C17]">
+              Web Developer
+            </h2>
+            <h1 className="text-7xl text-shadow-2xs uppercase font-bold animate-fade-up animate-once animate-duration-500 animate-ease-linear ">
               Ripon <br /> Mondal
             </h1>
             <p className="xl:w-2/3 py-4">

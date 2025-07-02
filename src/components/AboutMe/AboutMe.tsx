@@ -48,7 +48,7 @@ export default function AboutMe() {
                 About Me
               </h3>
               {/* about heading section */}
-              <h1 className="text-5xl font-semibold ">
+              <h1 className="text-5xl text-shadow-2xs font-semibold ">
                 Ripon Mondal{" "}
                 <span className="text-xl text-[#DF5C17]">[Web Developer]</span>
               </h1>

@@ -15,7 +15,7 @@ export default function PortfolioSection() {
               Portfolio
             </h3>
             {/* portfolio heading section */}
-            <h1 className="text-5xl font-semibold ">Visit my latest Work</h1>
+            <h1 className="text-5xl font-semibold ">Visit My Latest Work</h1>
           </div>
 
           {/* all portfolios details */}
