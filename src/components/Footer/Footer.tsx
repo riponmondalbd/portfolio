@@ -19,9 +19,9 @@ export default function FooterSection() {
               <Image width={25} height={25} src={logoImage} alt="logo" />
               <span className="text-4xl font-semibold uppercase">ipon</span>
             </Link>
-            <p className="py-5 xl:w-2/3">
-              Thank you for visiting.So why wait? let's create something
-              together.
+            <p className="py-5 xl:w-2/3 text-center md:text-left">
+              Thank you for visiting. I am always eager to build something new —
+              and I truly enjoy it.
             </p>
 
             {/* social links */}

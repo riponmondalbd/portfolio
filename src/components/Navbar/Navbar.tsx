@@ -34,13 +34,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 px-1">
             <Link href={"/"}>
               <div className="flex items-center">
-                <Image
-                  src={logo}
-                  height={18}
-                  width={18}
-                  alt="main logo"
-                  className="mt-1"
-                />
+                <Image src={logo} height={18} width={18} alt="main logo" />
                 <span className="text-4xl font-semibold uppercase">ipon</span>
               </div>
             </Link>
