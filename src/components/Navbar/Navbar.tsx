@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MdMenu, MdMenuOpen } from "react-icons/md";
 import logo from "../../../public/logo-orange.png";
+import SocialButtons from "../SocialButtons/SocialButtons";
 import { ThemeChanger } from "../ThemeChanger/ThemeChanger";
 import { NavbarData } from "./Navbardata/NavbarData";
 import ResponsiveMobileNav from "./ResponsiveMobileNav/ResponsiveMobileNav";
@@ -58,6 +59,10 @@ export default function Navbar() {
 
             {/* theme changer section */}
             <div className="flex gap-2 items-center">
+              {/* social buttons */}
+              <div className="hidden lg:block">
+                <SocialButtons />
+              </div>
               <div>
                 <ThemeChanger />
               </div>

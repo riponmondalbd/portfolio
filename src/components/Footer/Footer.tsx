@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
 import { FaLocationDot } from "react-icons/fa6";
 import { MdCall, MdEmail } from "react-icons/md";
 import logoImage from "../../../public/logo-orange.png";
 import { NavbarData } from "../Navbar/Navbardata/NavbarData";
+import SocialButtons from "../SocialButtons/SocialButtons";
 export default function FooterSection() {
   return (
     <footer className="bg-[#f4f4f4] dark:bg-black py-10 px-1">
@@ -26,36 +27,7 @@ export default function FooterSection() {
 
             {/* social links */}
             <div className="flex justify-center md:justify-start">
-              <div className="flex gap-4">
-                <Link
-                  href={"https://www.linkedin.com/in/riponmondalbd/"}
-                  target="_blank"
-                  className="border p-2 rounded-full bg-[#e7e7e7] hover:bg-[#DF5C17] hover:text-white dark:text-black dark:hover:text-white duration-700 hover:animate-jump animate-once animate-ease-linear"
-                >
-                  <FaLinkedin className="text-xl" />
-                </Link>
-                <Link
-                  href={"https://github.com/riponmondalbd"}
-                  target="_blank"
-                  className="border p-2 rounded-full bg-[#e7e7e7] hover:bg-[#DF5C17] hover:text-white dark:text-black dark:hover:text-white duration-700 hover:animate-jump animate-once animate-ease-linear"
-                >
-                  <FaGithub className="text-xl" />
-                </Link>
-                <Link
-                  href={"https://www.instagram.com/riponmondalbd/"}
-                  target="_blank"
-                  className="border p-2 rounded-full bg-[#e7e7e7] hover:bg-[#DF5C17] hover:text-white dark:text-black dark:hover:text-white duration-700 hover:animate-jump animate-once animate-ease-linear"
-                >
-                  <FaInstagram className="text-xl" />
-                </Link>
-                <Link
-                  href={"https://m.facebook.com/riponmondalbd/"}
-                  target="_blank"
-                  className="border p-2 rounded-full bg-[#e7e7e7] hover:bg-[#DF5C17] hover:text-white dark:text-black dark:hover:text-white duration-700 hover:animate-jump animate-once animate-ease-linear"
-                >
-                  <FaFacebook className="text-xl" />
-                </Link>
-              </div>
+              <SocialButtons />
             </div>
           </div>
 
