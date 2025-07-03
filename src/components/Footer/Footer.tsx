@@ -21,7 +21,7 @@ export default function FooterSection() {
               <span className="text-4xl font-semibold uppercase">ipon</span>
             </Link>
             <p className="py-5 xl:w-2/3 text-center md:text-left">
-              Thank you for visiting. I am always eager to build something new —
+              Thank you for visiting. I am always eager to build something new
               and I truly enjoy it.
             </p>
 

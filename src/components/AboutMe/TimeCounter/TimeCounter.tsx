@@ -1,4 +1,10 @@
 "use client";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import Image from "next/image";
 
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
@@ -45,55 +51,71 @@ export default function TimeCounter() {
   }, [inView]);
 
   return (
-    <div ref={ref} className="text-xl font-medium leading-relaxed">
-      <div className="border-2 dark:border-[#DF5C17] shadow p-4 rounded-xl">
-        <div className="text-5xl space-y-4 gap-10">
-          {/* Year */}
-          <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">
-            <p className="flex flex-col items-center font-bold">
-              <span>
-                <CountUp
-                  key={`year-${countKey}`}
-                  end={duration.years}
-                  duration={1.2}
-                  delay={0.3}
-                />
-              </span>
-              <span>Year{duration.years !== 1 && "s"}</span>
-            </p>
-          </div>
+    <>
+      <Tooltip>
+        <TooltipTrigger>
+          <div ref={ref} className="text-xl font-medium leading-relaxed">
+            <div className="border-2 dark:border-[#DF5C17] shadow p-4 rounded-xl">
+              <div className="text-5xl space-y-4 gap-10">
+                {/* Year */}
+                <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">
+                  <p className="flex flex-col items-center font-bold">
+                    <span>
+                      <CountUp
+                        key={`year-${countKey}`}
+                        end={duration.years}
+                        duration={1.2}
+                        delay={0.3}
+                      />
+                    </span>
+                    <span>Year{duration.years !== 1 && "s"}</span>
+                  </p>
+                </div>
 
-          {/* Month */}
-          <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">
-            <p className="flex flex-col items-center font-bold">
-              <span>
-                <CountUp
-                  key={`month-${countKey}`}
-                  end={duration.months}
-                  duration={1.2}
-                  delay={0.6}
-                />
-              </span>
-              <span>Month{duration.months !== 1 && "s"}</span>
-            </p>
-          </div>
+                {/* Month */}
+                <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">
+                  <p className="flex flex-col items-center font-bold">
+                    <span>
+                      <CountUp
+                        key={`month-${countKey}`}
+                        end={duration.months}
+                        duration={1.2}
+                        delay={0.6}
+                      />
+                    </span>
+                    <span>Month{duration.months !== 1 && "s"}</span>
+                  </p>
+                </div>
 
-          {/* Day */}
-          <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">
-            <p className="flex flex-col items-center font-bold">
-              <span>
-                <CountUp
-                  key={`day-${countKey}`}
-                  end={duration.days}
-                  duration={1.2}
-                  delay={0.9}
-                />
-              </span>
-              <span>Day{duration.days !== 1 && "s"}</span>
-            </p>
+                {/* Day */}
+                <div className="p-8 hover:shadow duration-500 bg-neutral-400/5 backdrop-blur-3xl rounded-md">
+                  <p className="flex flex-col items-center font-bold">
+                    <span>
+                      <CountUp
+                        key={`day-${countKey}`}
+                        end={duration.days}
+                        duration={1.2}
+                        delay={0.9}
+                      />
+                    </span>
+                    <span>Day{duration.days !== 1 && "s"}</span>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </TooltipTrigger>
+        <TooltipContent>
+          <a href="https://wakatime.com/@c147a387-bdfb-4149-bf5f-56eb0432af87">
+            <Image
+              width={150}
+              height={150}
+              src="https://wakatime.com/badge/user/c147a387-bdfb-4149-bf5f-56eb0432af87.svg"
+              alt="Total time coded since Aug 17 2023"
+            />
+          </a>
+        </TooltipContent>
+      </Tooltip>
+    </>
   );
 }
