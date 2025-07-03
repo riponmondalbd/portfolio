@@ -5,6 +5,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Image from "next/image";
+import Link from "next/link";
 
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
@@ -106,14 +107,17 @@ export default function TimeCounter() {
           </div>
         </TooltipTrigger>
         <TooltipContent>
-          <a href="https://wakatime.com/@c147a387-bdfb-4149-bf5f-56eb0432af87">
+          <Link
+            href="https://wakatime.com/@c147a387-bdfb-4149-bf5f-56eb0432af87"
+            target="_blank"
+          >
             <Image
               width={150}
               height={150}
               src="https://wakatime.com/badge/user/c147a387-bdfb-4149-bf5f-56eb0432af87.svg"
               alt="Total time coded since Aug 17 2023"
             />
-          </a>
+          </Link>
         </TooltipContent>
       </Tooltip>
     </>
