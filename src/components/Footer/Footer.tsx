@@ -77,7 +77,7 @@ export default function FooterSection() {
         </div>
         {/* copyright section */}
         <div>
-          <p className="text-center mt-5">
+          <p className="text-center mt-10">
             &copy; {new Date().getFullYear()} Ripon Mondal. All rights reserved.
           </p>
         </div>

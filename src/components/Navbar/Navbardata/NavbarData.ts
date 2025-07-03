@@ -19,9 +19,9 @@ export const NavbarData = [
     title: "Skills",
     link: "#skills",
   },
-  {
-    id: 5,
-    title: "Contact",
-    link: "#contact",
-  },
+  // {
+  //   id: 5,
+  //   title: "Contact",
+  //   link: "#contact",
+  // },
 ];
